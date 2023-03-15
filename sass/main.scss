@@ -1,6 +1,7 @@
-@use './utils/variables';
-@use '../sass/components/header-logo';
-
+@import '../sass/components/header-logo';
+@import '../sass/components/header';
+@import '../sass/components/nav';
+@import '../sass/components/section';
 * {
   margin: 0;
   border: 0;
@@ -14,17 +15,11 @@
   padding: 0 15px;
 }
 
-.section {
-  padding: 94px 0;
-  margin: 0 auto;
-}
-
 body {
   font-family: $familyRoboto;
   color: $color-black;
 }
-
-.page-header {
-  display: flex;
-  align-items: center;
+.section {
+  padding: 94px 0;
+  margin: 0 auto;
 }
