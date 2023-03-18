@@ -1,7 +1,10 @@
+@import '../sass/components/modal';
 @import '../sass/components/header-logo';
 @import '../sass/components/header';
 @import '../sass/components/nav';
 @import '../sass/components/section';
+@import '../utils/variables';
+
 * {
   margin: 0;
   border: 0;
@@ -15,10 +18,6 @@
   padding: 0 15px;
 }
 
-body {
-  font-family: $familyRoboto;
-  color: $color-black;
-}
 .section {
   padding: 94px 0;
   margin: 0 auto;
