@@ -169,7 +169,7 @@ body {
 .text-lorem-ipsum {
   line-height: 1.71;
   font-size: 14px;
-
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--color-gray);
 }
@@ -177,7 +177,7 @@ body {
 .text-lorem-ipsum-last {
   line-height: 1.71;
   font-size: 14px;
-
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: var(--color-gray);
   padding-top: 10px;
@@ -562,7 +562,7 @@ ul {
 .label {
   position: absolute;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1, 14;
   letter-spacing: 0.03em;
   bottom: 0;
   margin: 0;

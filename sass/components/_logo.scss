@@ -1,0 +1,42 @@
+@use '../utils/variables';
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  border-bottom: 1px solid $color-border;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-webstudio {
+  text-decoration: none;
+  line-height: 1.19;
+  font-size: 26px;
+  font-weight: $fontMedium;
+  letter-spacing: 0.03em;
+  font-family: $familyRaleway;
+  padding: 24px 93px 25px 0;
+}
+.title-footer__logo {
+  @extend .logo-webstudio;
+  margin-right: 171px;
+  padding: 0;
+}
+.logo-webstudio__web {
+  color: $color-blue;
+}
+.title-footer__logo-web {
+  @extend .logo-webstudio__web;
+}
+
+.logo-webstudio__studio {
+  color: $color-studio;
+}
+.title-footer__logo-studio {
+  color: $color-white;
+}

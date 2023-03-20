@@ -1,0 +1,132 @@
+@use '../utils/variables';
+
+.footer {
+  background-color: $color-section;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.title-footer {
+  display: flex;
+  align-items: baseline;
+  list-style: none;
+}
+.title-footer__join-us {
+  font-weight: $fontMedium;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $color-white;
+  padding-bottom: 20px;
+}
+.title-footer__newsletter {
+  @extend.title-footer__join-us;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-left: 168px;
+}
+.contact-footer {
+  @extend.title-footer;
+}
+.contact-footer__adress {
+  font-style: normal;
+  line-height: 1.7;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: $color-white;
+  margin-right: 70px;
+}
+.contact-footer__icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $color-black;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.contact-footer__svg {
+  --color1: #ffffff;
+}
+.newsletter {
+  @extend.title-footer;
+  justify-content: flex-end;
+}
+.newsletter__input {
+  width: 358px;
+  height: 50px;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 290px 15px 16px;
+  margin-right: 12px;
+  margin-left: 65px;
+
+  &:focus {
+    outline: none;
+    border-color: $color-blue;
+  }
+}
+.newsletter__button {
+  background: $color-blue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: $fontMedium;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: $color-white;
+  padding: 10px 76px 10px 42px;
+  justify-content: flex-end;
+  position: relative;
+
+  &:hover {
+    background-color: $color-button;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.newsletter__icon {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  transform: translatey(50%);
+}
+.list-contact {
+  list-style: none;
+  text-decoration: none;
+}
+
+.list-contact > li {
+  padding-bottom: 9px;
+}
+
+.list-contact__mail {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  &:hover {
+    color: $color-blue;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.list-contact__tel {
+  @extend.list-contact__mail;
+  &:hover {
+    color: $color-blue;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
