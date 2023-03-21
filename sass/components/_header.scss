@@ -101,8 +101,10 @@
 .baner {
   background-color: $color-section;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/office.jpg');
+    url(../images/office.jpg);
   max-width: 1600px;
+  height: 600px;
+  background-repeat: no-repeat;
 }
 .heading-primary {
   color: $color-white;
@@ -111,6 +113,9 @@
   letter-spacing: 0.06em;
   font-size: 44px;
   padding: 106px 237px 30px;
+  text-align: center;
+}
+.button {
   text-align: center;
 }
 .butto__hero {
